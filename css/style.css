@@ -1,0 +1,231 @@
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+    url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: block;
+  background-color: #1a1915;
+  background-image: url('../images/mobile_Vector_Smart_Object.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 138px;
+}
+.log-in,
+.sign-up {
+  width: 90px;
+  height: 36px;
+  border: none;
+  background-color: rgba(26, 25, 21, 0);
+  margin-bottom: 116px;
+}
+.log-in:hover,
+.sign-up:hover {
+  border-radius: 18px;
+  border: 2px solid #ffffff;
+}
+.header-button button {
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+.logo {
+  margin-bottom: 34px;
+}
+.logo a {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.header h2 {
+  font-size: 1.875rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.header-br,
+.header-p-br,
+.services-partner-biography-br {
+  display: block;
+}
+.header p {
+  font-family: 'Roboto';
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+.button-holiday-partner {
+  width: 280px;
+  height: 40px;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  color: #ffffff;
+}
+.services {
+  padding-top: 70px;
+  padding-bottom: 56px;
+}
+.services h3 {
+  font-size: 1.375rem;
+  color: #333333;
+  margin-bottom: 18px;
+}
+.services img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.wraper-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.wraper-img::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 4px solid #ffffff;
+  bottom: 0;
+  right: 0;
+}
+.tv-icon::after {
+  background-color: #ff4e50;
+  background-image: url('../icons/TV-icon.png');
+}
+.cup-icon::after {
+  background-color: #ffa507;
+  background-image: url('../icons/cup-icon.png');
+}
+.flask-icon::after {
+  background-color: #1cd7ad;
+  background-image: url('../icons/flask-icon.png');
+}
+.twitter-icon::after {
+  background-color: #4e73db;
+  background-image: url('../icons/twitter-icon.png');
+}
+.services-partner-name {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 18px;
+}
+.services-partner-biography {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+}
+.services-list li {
+  margin-bottom: 28px;
+}
+.services-button {
+  width: 280px;
+  height: 40px;
+  font-size: 0.875rem;
+  color: #ff4e50;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+}
+@media (min-width: 768px) {
+  .header {
+    background-image: url('../images/tablet_Vector_Smart_Object.png');
+    padding-top: 36px;
+    padding-bottom: 232px;
+  }
+  .logo-and-button {
+    margin-bottom: 150px;
+  }
+  .header-p-br {
+    display: inline-block;
+  }
+  .header h2 {
+    font-size: 3.25rem;
+    margin-bottom: 38px;
+  }
+  .header p {
+    font-size: 1.5rem;
+    margin-bottom: 34px;
+  }
+  .button-holiday-partner {
+    width: 225px;
+  }
+  .services {
+    padding-top: 74px;
+    padding-bottom: 40px;
+  }
+  .services h3 {
+    margin-bottom: 34px;
+  }
+  .services-list-item {
+    width: 221px;
+  }
+  .services-list li:nth-of-type(odd) {
+    margin-bottom: 58px;
+  }
+  .services-list li:nth-of-type(even) {
+    margin-bottom: 38px;
+  }
+  .services-button {
+    width: 192px;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    background-image: url('../images/desktop_Vector_Smart_Object.png');
+  }
+  .services {
+    padding-bottom: 74px;
+  }
+  .services-list li {
+    margin-bottom: 38px;
+  }
+}
